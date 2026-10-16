@@ -10,3 +10,7 @@ for salary in salaries:
     if salary>30000:
         count+=1
 print("above 30000:",count)
+
+def average_salary(numbers):
+    return sum(numbers)/len(numbers)
+print("Average:",average_salary(salaries))
