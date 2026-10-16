@@ -3,6 +3,10 @@ employees=[
     {"name":"Ravi","salary":42000},
     {"name":"Meena","salary":35000}
 ]
-for employee in employees:
-    if employee["salary"]>30000:
-        print(employee["name"],employee["salary"])
+
+
+def high_earners(people,limit):
+    for employee in people:
+        if employee["salary"]>limit:
+            print(employee["name"],employee["salary"])
+high_earners(employees,40000)
